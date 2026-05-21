@@ -1,6 +1,16 @@
+:root{
+    --cor-de-fundo-cabecalho: rgb(81, 3, 155);
+    --margem: 0;
+    --borda-padrao: 1px;
+    --espaco-padrao: 0;
+
+}
+
+
+
 * {
-    margin: 0;
-    padding: 0;
+    margin: var(--margem);
+    padding: var(--espaco-padrao);
     box-sizing: border-box;
 }
 
@@ -9,12 +19,12 @@ body {
     line-height: 1.5;
     color: #222;
     background: #fff;
-    margin: 0;
+    margin: var(--margem);
 }
 
 nav  {
 
-    background-color: rgb(81, 3, 155);
+    background-color: var(--cor-de-fundo-cabecalho);
     padding: 10px;
 }
 
@@ -25,20 +35,20 @@ nav a {
 }
 
 h1 {
-    color: rgb(81, 3, 155);
+    color: var(--cor-de-fundo-cabecalho);
     
 }
 
 main img  {
     width: 150px;
     height: auto;
-    border: 1px solid rgb(89, 7, 167);
+    border: var(--borda-padrao) solid rgb(89, 7, 167);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
 p  {
-    padding: 0;
+    padding: var(--espaco-padrao);
 }
 
 main {
@@ -48,7 +58,7 @@ main {
 aside {
     width: 20rem;
     margin: 1em;
-    border: 1px solid rgba(0 0 0 / 0.2); 
+    border: var(--borda-padrao) solid rgba(0 0 0 / 0.2); 
     padding: 1rem;
     background-color: #f7fdfd;
     color: #333;
