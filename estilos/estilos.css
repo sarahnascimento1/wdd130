@@ -46,7 +46,7 @@ main img  {
     border: var(--borda-padrao) solid rgb(89, 7, 167);
     padding: 2px;
     box-shadow: 0 0 30px gray;
-    float: right;
+    float: right; 
 }
 
 p  {
