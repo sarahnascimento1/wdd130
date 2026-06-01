@@ -6,10 +6,9 @@
 }
 
 
-
 * {
-    /* margin: var(--margem);
-    padding: var(--espaco-padrao); */
+    margin: var(--margem);
+    padding: var(--espaco-padrao);
     box-sizing: border-box;
 }
 
@@ -73,13 +72,13 @@ aside {
 }
 
 aside img {
-        width: 200px;
-        height: auto;
+    width: 200px;
+    height: auto;
 }
 
 aside h2 {
     position: absolute;
-    top: 6px;
+    top: 17px;
     left: 100px;
 }
 
@@ -114,6 +113,7 @@ header, footer .grid {
     grid-template-columns: 20rem 1fr;
     gap: 1rem;
     margin-top:-1rem;
+    
 
 }
 
@@ -124,7 +124,7 @@ main {
 
 aside {
     width: 20rem;
-    position: relative;
+    position: absolute;
     grid-column: 1/2;
     grid-row: 1/2;
 }

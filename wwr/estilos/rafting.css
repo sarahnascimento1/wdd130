@@ -1,11 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 :root {
     --primeira-cor:rgb(40, 206, 192);
     --segunda-cor: rgb(85, 170, 85);
     --terceira-cor: rgb(9, 9, 156);
     --quarta-cor: rgb(67, 215, 235);
+    --quinta-cor: white; 
+    --sexta-cor: rgb(100, 42, 42);   
     --cor-destaque:rgb(25, 8, 65);
-    --fonte-titulo: "Times New Roman","Georgia", serif;
-    --fonte-body: Arial, Helvetica, sans-serif;
+    --fonte-titulo: "Lato", sans-serif;
+    --fonte-body: "Lato", sans-serif; 
 
 }
 
@@ -15,105 +20,185 @@
     box-sizing: border-box;
 }
 
+
+
 header {
     background-color: var(--primeira-cor);
     color: var(--terceira-cor);
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--quinta-cor);
+    max-width: 100%;
+    
     
 }
+
+header a {
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    margin-right: 3.5rem;
+}
+
 
 
 body {
     
     font-family: var(--fonte-body);
     color: var(--cor-destaque);
+    background-color: rgb(179, 238, 189);
     
 }
 
-header, main, footer {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
+.conteiner{
+    
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0rem 2rem 0rem;
     
     
-
 }
+
+.conteiner img {
+    width: 20rem;
+    justify-self: center;
+    border: 0.1rem solid var(--sexta-cor);
+    box-shadow: 0 0 10px var(--primeira-cor)
+    
+}
+
+.titulo-historia{
+    padding: 2rem 3rem 2rem 3rem;
+}
+
 
 
 h1, h2{
     font-family: var(--fonte-titulo);
     color: var(--cor-destaque);
     text-align: center;
+    
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 nav, p, section, article {
     margin: 0px;
     padding: 8px;
+    
 }
 
-.redes-sociais a {
+
+nav a {
+    display: block;
+    padding: 0.5rem;
     text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    
+
 }
+
+
 
 .hero {
     position: relative; 
+  
+
+
 }
 
 .hero img {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 1200px;
+    height: 780px;
+    margin: 1rem 4rem;
+    
+    
 }
 
 .hero h1 {
     position: absolute;
-    top: 20px;
+    top: 90px;
+    left: 64px;
+    right: 50px;
+    transform: translateY(-50%);
     width: 100%;
+    max-width: 1200px;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.8;
     background-color: var(--segunda-cor);
     color: black
+    
+    
 }
 
 .hero article img {
-    float: right;
-    width: 210px;
-
+    width: 200px;
+    height: auto;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 30px var(--cor-destaque);
+    
 }
 
+
+article p {
+    font-size: 20px;
+}
 
 
 .hero article {
     position: absolute;
-    background: var(--quarta-cor);
-    color: black;
-    padding: 15px;
-    top: 800px;
-    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    width: 950px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: var(--primeira-cor);
+    gap: 2rem;
+    padding: 20px;
+    border-radius: 20px;
     opacity: 0.9;
-    text-align: left;
-    border-radius: 12px;
-    max-width: 900px;
     
-    
-    
+}
+
+.hero p {
+    color: black;
+
 }
 
 footer {
     background-color: var(--primeira-cor);
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: left;
-    gap: 10px
-    
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+   
 }
 
-footer a {
-    display: block;
-}
+
 
 footer p {
     font-weight: 700;
+    margin: 0;
+    text-align: center;
+    
 }
 
 section{
@@ -122,8 +207,53 @@ section{
     
 }
 
+.redes-sociais {
+   position: absolute;
+   right: 20px;
+   display: flex;
+   gap: 10px;
+   align-items: center;
+
+
+}
+
+.redes-sociais img {
+    width: 2rem;
+    
+}
+
+.imagens-mini {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 1rem 0rem 3rem 0rem;
+    
+
+}
+
+.imagens-mini h2 {
+    width: 100%;
+}
+
+.imagens-mini img {
+    width: 13rem;
+    display: flex;
+    border: 0.1rem solid var(--cor-destaque);
+    box-shadow: 0 0 30px var(--sexta-cor) ;
+}
+
 ul {
     list-style-position: inside;
+    display: flex;
+    list-style: none;
+    
+}
+
+ul a {
+    text-decoration: none;
 }
 
 
