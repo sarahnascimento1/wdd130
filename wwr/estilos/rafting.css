@@ -6,8 +6,9 @@
     --segunda-cor: rgb(85, 170, 85);
     --terceira-cor: rgb(9, 9, 156);
     --quarta-cor: black;
-    --quinta-cor: white; 
-    --sexta-cor: rgb(100, 42, 42);   
+    --quinta-cor: rgb(178, 226, 210); 
+    --sexta-cor: rgb(100, 42, 42);  
+    --oitava-cor: rgb(44, 22, 9); 
     --cor-destaque:rgb(25, 8, 65);
     --fonte-titulo: Helvetica, sans-serif;
     --fonte-body: Arial, Helvetica, sans-serif;
@@ -51,6 +52,7 @@ body {
     
     font-family: var(--fonte-body);
     color: var(--cor-destaque);
+    background-color: var(--quinta-cor);
    
     
 }
@@ -220,7 +222,7 @@ section{
     
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1rem;
     justify-content: center;
     margin: 1rem 0rem 1rem 0rem;
     padding: 1rem 0rem 3rem 0rem;
@@ -230,13 +232,24 @@ section{
 
 .imagens-mini h2 {
     width: 100%;
+    padding-bottom: 2rem;   
 }
 
 .imagens-mini img {
+    
     width: 13rem;
-    display: flex;
+    height: 8rem;
+    object-fit: cover;
     border: 0.1rem solid var(--cor-destaque);
     box-shadow: 0 0 30px var(--sexta-cor) ;
+}
+
+.imagens-mini figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+    margin: 0;
 }
 
 ul {
@@ -245,6 +258,16 @@ ul {
     list-style: none;
     
 }
+
+figcaption {
+    padding-top: 1rem;
+    color: var(--oitava-cor);
+    font-weight: 700;
+    font-style: italic;
+    
+}
+
+
 
 
 
