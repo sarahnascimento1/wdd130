@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contatos de telefone e e-mail para falar conosco na One Day Rafting">
+    <meta name="author" content="Sarah Nascimento">
+    <title>Contatos da empresa One Day Rafting</title>
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="./imagens/z-splash.png" alt="Logo tipo do site">
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="passeios.html">Passeios</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="contatos-one-day">
+            <h1>One Day Rafting</h1>
+            <p>Avenida das Cachoeiras 111</p>
+            <p>Campinas - São Paulo</p>
+            <p>+55 19 99999-9999</p>
+            <p>oneday@rafting.com.br</p>
+
+        </div>
+
+
+        <article class="mapa-form">
+
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58754.21773418947!2d-47.29178386429826!3d-22.71719008892908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1780950747984!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+            <form>
+
+                <fieldset>
+                    <legend>Fale Conosco</legend>
+                    <div class="item">
+                        <label for="nome-completo">Nome Completo:</label>
+                        <input type="text" id="nome-completo" name="nome-completo" required>
+                    </div>
+
+                    <div class="item">
+                        <label for="email-usuario">E-mail:</label>
+                        <input type="email" id="email-usuario" name="email-usuario" required>
+                    </div>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Propósito da Mensagem</legend>
+                    <div class="motivo">
+                        <label for="duvida">Dúvida Geral</label>
+                        <input type="radio" id="duvida" name="motivo">
+
+                        <label for="pergunta">Pergunta sobre Reserva</label>
+                        <input type="radio" id="pergunta" name="motivo">
+
+                        <label for="sugestao">Sugestão</label>
+                        <input type="radio" id="sugestao" name="motivo">
+                    </div>
+                    <div class="motivo2">
+                        <label for="feedback">Descreva a sua Solicitação:</label>
+                        <textarea name="feedback" id="feedback" rows="2" placeholder="Digite Aqui"></textarea>
+                    </div>
+
+                </fieldset>
+                <div class="newsletter">
+                    <label for="inscricao">Quero me inscrever na newsletter mensal!</label>
+                    <input type="checkbox" id="inscricao" name="inscricao">
+                </div>
+
+
+                <button type="submit">Entrar em Contato!</button>
+            </form>
+        </article>
+
+        <section class="imagens-funcionarios">
+            <h2>A Gente te Ajuda em Cada Passo</h2>
+            <figure>
+                <img src="./imagens/funcionario1.jpg" alt="funcionario1">
+                <figcaption>Assitente de Guia</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./imagens/funcionaria.jpg" alt="funcionaria">
+                <figcaption>Instrutora/Socorrista</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./imagens/funcionario2.jpg" alt="funcionario2">
+                <figcaption>Guia</figcaption>
+            </figure>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026| One Day Rafting | Sarah Nascimento</p>
+        <nav class="redes-sociais">
+            <a href="https://www.facebook.com/?locale=pt_BR">
+                <img src="./imagens/facebook.png" alt="Icone Facebook">
+            </a>
+            <a href="https://www.instagram.com/accounts/login/">
+                <img src="./imagens/instagram.png" alt="Icone Instagram">
+            </a>
+            <a href="https://x.com/?lang=pt">
+                <img src="./imagens/twitter-x.png" alt="Icone X">
+            </a>
+        </nav>
+    </footer>
+
+
+
+</body>
+
+</html>

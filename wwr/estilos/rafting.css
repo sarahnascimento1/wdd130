@@ -4,12 +4,15 @@
 :root {
     --primeira-cor:rgb(40, 206, 192);
     --segunda-cor: rgb(85, 170, 85);
-    --terceira-cor: rgb(9, 9, 156);
+    --terceira-cor: rgb(8, 8, 141);
     --quarta-cor: black;
     --quinta-cor: rgb(178, 226, 210); 
     --sexta-cor: rgb(100, 42, 42);  
     --oitava-cor: rgb(44, 22, 9); 
+    --nona-cor: rgb(197, 233, 200);
+    --decima-cor: rgb(125, 196, 59);
     --cor-destaque:rgb(25, 8, 65);
+    --cor-clara: rgb(159, 209, 112);
     --fonte-titulo: Helvetica, sans-serif;
     --fonte-body: Arial, Helvetica, sans-serif;
 
@@ -266,6 +269,158 @@ figcaption {
     font-style: italic;
     
 }
+
+.contatos-one-day h1 {
+    padding: 10px 30px 10px 60px;
+    background-color: var(--segunda-cor);
+    margin: 16px 50px 18px 50px;
+    color: var(--oitava-cor);
+    
+
+    
+}
+
+.contatos-one-day p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 700;
+    color: var(--cor-destaque);
+}
+
+.mapa-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4rem;
+    gap: 5rem;
+    
+}
+
+form {
+
+    width: 100%;
+    max-width: 380px;
+    margin: 0;
+    border: 1px solid var(--sexta-cor);
+    border-radius: 0.7rem;
+    display: grid;
+    gap: 1rem;
+    padding: 30px;
+    font-size: 15px;
+    background-color: var(--nona-cor);
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1px;
+    padding: 1rem;
+    border: 1px solid var(--segunda-cor);
+
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    gap: 0.3;
+    margin: 0rem;
+}
+
+.item input, textarea {
+    padding: 0.3rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.motivo {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 5px 8px;
+    justify-content: start;
+}
+
+.motivo2, textarea {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: auto;
+}
+
+legend {
+    font-size: 1.1rem;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: var(--sexta-cor);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.newsletter {
+    text-align: center;
+
+}
+
+button {
+    width: 140px;
+    justify-self: center;
+    border: 1px solid var(--sexta-cor);
+    border-radius: 6px;
+    padding: 0.5rem;
+    background-color: var(--decima-cor);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-clara);
+}
+
+input[type="radio"] {
+    accent-color: var(--decima-cor)
+}
+
+input[type="checkbox"] {
+    accent-color: var(--decima-cor);
+}
+
+.imagens-funcionarios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 100px;
+    margin-bottom: 15px;
+    padding-bottom: 30px;
+    
+}
+
+.imagens-funcionarios img {
+    width: 16rem;
+    height: 11rem;
+    object-fit: cover;
+    border: 0.1rem solid var(--cor-destaque);
+    border-radius: 10px;
+    box-shadow: 0 0 30px var(--sexta-cor) ;
+    
+}
+
+.imagens-funcionarios h2 {
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 10px; 
+}
+
+.imagens-funcionarios figcaption {
+    text-align: center;
+}
+
+
+
+
+
+
+
 
 
 
