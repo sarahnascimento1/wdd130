@@ -296,6 +296,11 @@ figcaption {
     
 }
 
+.mapa iframe {
+    border: 0;
+    box-shadow: none;
+}
+
 form {
 
     width: 100%;
