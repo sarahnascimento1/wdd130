@@ -181,7 +181,7 @@ article p {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    background-color: var(--primeira-cor);
+    background-color: var(--decima-primeira-cor);
     gap: 2rem;
     padding: 49px;
     border-radius: 20px;
