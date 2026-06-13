@@ -11,6 +11,8 @@
     --oitava-cor: rgb(44, 22, 9); 
     --nona-cor: rgb(197, 233, 200);
     --decima-cor: rgb(125, 196, 59);
+    --decima-primeira-cor: #7ac695;
+    --decima-segunda-cor: rgb(211, 137, 40);
     --cor-destaque:rgb(25, 8, 65);
     --cor-clara: rgb(159, 209, 112);
     --fonte-titulo: Helvetica, sans-serif;
@@ -28,7 +30,7 @@
 
 header {
     background-color: var(--primeira-cor);
-    color: var(--terceira-cor);
+    color: var(--cor-destaque);
     display: grid;
     grid-auto-flow: column;
     justify-content: center;
@@ -36,7 +38,7 @@ header {
     padding: 1rem;
     border-bottom: 1px solid var(--quinta-cor);
     max-width: 100%;
-    
+   
     
 }
 
@@ -60,6 +62,11 @@ body {
     
 }
 
+main {
+    margin-top: 0.8rem;
+    
+}
+
 .conteiner{
     
     display: grid;
@@ -79,7 +86,7 @@ body {
     
 }
 
-.titulo-historia{
+.titulo-historia {
     padding: 2rem 3rem 2rem 3rem;
 }
 
@@ -123,9 +130,10 @@ nav a {
 
 .hero img {
     display: block;
-    width: 1200px;
+    width: 100%;
     height: 780px;
-    margin: 1rem 4rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     
     
 }
@@ -175,7 +183,7 @@ article p {
     align-items: center;
     background-color: var(--primeira-cor);
     gap: 2rem;
-    padding: 20px;
+    padding: 49px;
     border-radius: 20px;
     opacity: 0.9;
     
@@ -419,6 +427,304 @@ input[type="checkbox"] {
 .imagens-funcionarios figcaption {
     text-align: center;
 }
+
+.tabela-passeios {
+    margin-bottom: 1rem;
+    background-color: var(--segunda-cor);
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    padding: 3rem;
+}
+
+
+
+.form-inscricao legend{
+    margin-bottom: 1rem;
+    align-items: flex-end;
+    font-family: var(--fonte-body)
+
+}   
+
+.tabela-passeios img {
+    display: block;
+    max-width: 300px;
+
+}
+
+.form-inscricao {
+    background-color: var(--quinta-cor);
+    border: 1px solid var(--decima-segunda-cor);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.form-inscricao .name,
+.form-inscricao .e-mail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+}
+
+.form-inscricao input {
+    padding: 5px;
+    border: 1px solid var(--decima-segunda-cor);
+    border-radius: 7px;
+}
+
+.form-inscricao input:focus {
+    border: 2px solid var(--decima-segunda-cor);
+    outline: none;
+}
+
+.form-inscricao legend {
+    text-align: center;
+}
+
+
+.form-inscricao button {
+    background-color: var(--decima-segunda-cor);
+    margin-left: 6rem ;
+    
+}
+
+.form-inscricao button:hover {
+    background-color: var(--primeira-cor);
+}
+
+.link-passeio img {
+    border: 1px solid var(--cor-clara);
+    border-radius: 35px;
+    box-shadow: 0 0 30px var(--cor-clara);
+
+}
+
+.link-passeio figcaption {
+    text-align: center;
+    padding-bottom: 1rem;
+    
+}
+
+.descricao-passeio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    margin: 0 auto;
+    padding: 45px;
+    
+}
+
+.descricao-passeio img,
+.descricao-passeio p {
+    width: 100%;
+    display: block;
+    
+}
+
+.descricao-passeio img {
+    border: 1px solid var(--cor-clara);
+    border-radius: 25px;
+    box-shadow: 0 0 10px var(--sexta-cor);
+    
+}
+
+.descricao-passeio figcaption {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.agitada {
+    border: 1px solid var(--cor-clara);
+    border-radius: 35px;
+    padding: 1rem;
+    background-color: var(--cor-clara);
+    
+}
+
+.oasis {
+    border: 1px solid var(--cor-clara); 
+    border-radius: 35px;
+    padding: 1rem;
+    background-color: var(--cor-clara);
+}
+
+.easy {
+    border: 1px solid var(--cor-clara);
+    border-radius: 35px;
+    padding: 1rem;
+    background-color: var(--cor-clara);
+}
+
+.oasis img {
+    height: 239px;
+
+}
+
+.passeios {
+    padding-top: 2rem;
+}
+
+table {
+    
+    border-collapse: collapse;
+    border-spacing: 0;
+    
+    
+}
+
+th, td {
+    border-bottom: 1px solid var(--cor-destaque);
+    letter-spacing: 1px;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.tabela {
+    background-color: #7ac695;
+    display: grid;
+    gap: 2rem;
+    padding: 2rem 20rem 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tabela h2 {
+    font-size: 30px;
+    color: var(--sexta-cor);
+    
+}
+
+.fale-conosco a {
+    display: inline-block;
+    background-color: var(--decima-segunda-cor);
+    color: var(--cor-destaque);
+    padding: 24px 42px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 23px;
+    text-align: center;
+    
+}
+
+.fale-conosco {
+    display: flex;
+    grid-column: 1 / -1;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+
+.duas-imagens ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    display: block;
+}
+
+.promocao {
+    background-color: var(--segunda-cor);
+    display: grid;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    justify-items: center;
+    
+}
+
+.promocao h1, h2 {
+    padding: 15px;
+}
+
+.promocao h1 {
+    color: var(--nona-cor);
+    background-color: #C72B32;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.promocao img {
+    border-radius: 15px;
+    box-shadow: 0 0 10px var(--decima-segunda-cor);
+}
+
+.ofertas {
+    display: grid;
+    gap: 60px;
+    padding: 0 40px 45px;
+    margin-bottom: 1rem;
+    background-color: var(--decima-primeira-cor);
+    
+}
+ 
+.oferta-um,
+.oferta-dois {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 30px;
+    align-items: center;
+}
+
+.oferta-um img,
+.oferta-dois img {
+    width: 300px;
+    height: auto;
+    display: block;
+    align-items: center;
+    border: 1px solid var(--decima-segunda-cor);
+    border-radius: 25px;
+    box-shadow: 0 0 30px var(--sexta-cor);
+   
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.oferta-um {
+    display: grid   ;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    align-items: center;
+    padding-top: 5rem;
+    
+
+}
+
+.oferta-dois {
+    grid-template-columns: 1fr 300px;
+}
+
+.oferta-um p {
+    margin: 0;
+}
+
+.oferta-um img {
+    width: 300px;
+    height: auto;
+  
+   
+    
+}
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
 
 
 
