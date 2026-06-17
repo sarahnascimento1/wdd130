@@ -189,6 +189,12 @@ article p {
     
 }
 
+.hero article.sobre-imagem {
+   
+    flex-direction: row-reverse;
+   
+}
+
 
 footer {
     background-color: var(--primeira-cor);
